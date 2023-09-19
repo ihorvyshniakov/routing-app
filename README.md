@@ -1,4 +1,4 @@
-# [Fortnite shop app](https://ihorvyshniakov.github.io/routing-app/)
+# [Routing app](https://ihorvyshniakov.github.io/routing-app/)
 
 © 2023 Developed by Vyshniakov Ihor.
 
