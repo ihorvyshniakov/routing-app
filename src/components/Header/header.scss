@@ -1,0 +1,26 @@
+@mixin orange {
+	background-color: #ffb444 !important;
+	* {
+		color: #000 !important;
+		fill: #000 !important;
+	}
+}
+
+nav {
+	@include orange;
+
+	* {
+		font-family: 'DynaPuff', cursive !important;
+	}
+
+	ul,
+	li {
+		height: 100%;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

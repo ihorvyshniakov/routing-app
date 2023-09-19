@@ -1,0 +1,18 @@
+@mixin blue {
+	background-color: #5465ff !important;
+	* {
+		color: #fff !important;
+		fill: #fff !important;
+	}
+}
+
+footer {
+	padding-top: 0 !important;
+	@include blue;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

@@ -1,9 +1,16 @@
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 import './App.scss';
 
 function App() {
 	return (
 		<>
-			<h1>Routing app</h1>
+			<Header />
+			<main>
+				<h1>Routing app</h1>
+			</main>
+			<Footer />
 		</>
 	);
 }
