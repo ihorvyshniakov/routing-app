@@ -6,7 +6,7 @@ const Header = () => {
 		<nav className='header'>
 			<div className='nav-wrapper container'>
 				<a href='/' className='brand-logo'>
-					Fortnite shop
+					Routing app
 				</a>
 				<ul id='nav-mobile' className='right'>
 					<li>
