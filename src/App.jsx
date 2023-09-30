@@ -6,6 +6,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import Movie from './pages/Movie';
 
 export const go = route => String(`/routing-app${route}`);
 
@@ -19,6 +20,7 @@ function App() {
 					<Route path={go('/about')} component={About} />
 					<Route path={go('/contact')} component={Contact} />
 					<Route path={go('/any')} component={NotFound} />
+					<Route path={go('/movies/:title')} component={Movie} />
 					<Route component={NotFound} />
 				</Switch>
 			</main>
