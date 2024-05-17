@@ -1,20 +1,22 @@
-import './App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import About from './pages/About';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import Movie from './pages/Movie';
+import './App.scss'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import About from './pages/About'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
+import Movie from './pages/Movie'
 
-export const go = route => String(`/routing-app${route}`);
+export const go = route => String(`/routing-app${route}`)
 
 function App() {
 	return (
 		<Router>
 			<Header />
 			<main className='container content'>
+				<Link to={go('/movies/Star Wars')}>movies</Link>
+				<br />
 				<Switch>
 					<Route exact path={go('/')} component={Home} />
 					<Route path={go('/about')} component={About} />
@@ -26,7 +28,7 @@ function App() {
 			</main>
 			<Footer />
 		</Router>
-	);
+	)
 }
 
-export default App;
+export default App
