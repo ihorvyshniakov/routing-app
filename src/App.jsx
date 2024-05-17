@@ -15,10 +15,16 @@ function App() {
 		<Router>
 			<Header />
 			<main className='container content'>
+				<Link to={go('/')}>home</Link> -
+				<Link to={go('/about')}>about</Link> -
+				<Link to={go('/contact')}>contact</Link> -
+				<Link to={go('/any')}>any</Link> -
 				<Link to={go('/movies/Star Wars')}>movies</Link>
 				<br />
 				<Switch>
-					<Route exact path={go('/')} component={Home} />
+					<Route exact path={go('/')}>
+						<Home />
+					</Route>
 					<Route path={go('/about')} component={About} />
 					<Route path={go('/contact')} component={Contact} />
 					<Route path={go('/any')} component={NotFound} />
