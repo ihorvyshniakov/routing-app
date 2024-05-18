@@ -18,7 +18,7 @@ const CategoryItem = ({
 				<p>{strCategoryDescription.slice(0, 60)}...</p>
 			</div>
 			<div className='card-action'>
-				<Link to={go(`/category/${idCategory}`)} className='btn'>
+				<Link to={go(`/category/${strCategory}`)} className='btn'>
 					Watch category
 				</Link>
 			</div>
