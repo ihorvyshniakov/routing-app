@@ -22,9 +22,7 @@ function App() {
 				<Link to={go('/movies/Star Wars')}>movies</Link>
 				<br />
 				<Switch>
-					<Route exact path={go('/')}>
-						<Home />
-					</Route>
+					<Route exact path={go('/')} component={Home} />
 					<Route path={go('/about')} component={About} />
 					<Route path={go('/contact')} component={Contact} />
 					<Route path={go('/any')} component={NotFound} />

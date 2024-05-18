@@ -1,5 +1,19 @@
-const Home = () => {
-	return <div>Home</div>;
-};
+import { useEffect, useState } from 'react'
+import { getAllCategories } from '../api'
+import Preloader from '../components/Preloader/preloader'
+import CategoryList from '../components/CategoryList'
 
-export default Home;
+const Home = () => {
+	const [catalog, setCatalog] = useState([])
+	useEffect(() => {
+		getAllCategories().then(data => setCatalog(data.categories))
+	}, [])
+
+	if (!catalog.length) {
+		return <Preloader />
+	}
+
+	return <CategoryList catalog={catalog} />
+}
+
+export default Home
