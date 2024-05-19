@@ -73,9 +73,27 @@ main {
 	.card {
 		display: flex;
 		flex-direction: column;
+
+		&-image {
+			display: flex;
+			justify-content: center;
+			img {
+				max-width: 450px;
+			}
+		}
 	}
 
 	.card-content {
 		flex-grow: 1;
+	}
+
+	.video-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	iframe {
+		width: 600px;
+		height: 350px;
 	}
 }
